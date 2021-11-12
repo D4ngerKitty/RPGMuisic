@@ -1,7 +1,7 @@
 
 enum MyEnum {
     //% block="one"
-    One,
+    Room,
 }
 
 /**
@@ -17,8 +17,36 @@ namespace Catloops {
      <i class ="far fa-play-circle"></i>
      */
     //% block
-    export function foo(e: MyEnum): void {
+    export function Play_song (e: MyEnum): void {
         
+        function Room () {
+    for (let index = 0; index < 2; index++) {
+        music.playTone(440, music.beat(BeatFraction.Half))
+        music.rest(music.beat(BeatFraction.Half))
+        music.playTone(349, music.beat(BeatFraction.Half))
+        music.rest(music.beat(BeatFraction.Half))
+        music.playTone(494, music.beat(BeatFraction.Half))
+        music.rest(music.beat(BeatFraction.Half))
+        music.playTone(415, music.beat(BeatFraction.Half))
+        music.playTone(494, music.beat(BeatFraction.Half))
+        music.playTone(523, music.beat(BeatFraction.Half))
+        music.playTone(587, music.beat(BeatFraction.Half))
+        music.playTone(587, music.beat(BeatFraction.Half))
+        music.rest(music.beat(BeatFraction.Whole))
+    }
+    music.playTone(440, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(392, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(494, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(440, music.beat(BeatFraction.Half))
+    music.playTone(494, music.beat(BeatFraction.Half))
+    music.playTone(587, music.beat(BeatFraction.Half))
+    music.playTone(659, music.beat(BeatFraction.Half))
+    music.playTone(659, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Whole))
+}
     }
 
 }
