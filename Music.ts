@@ -1,8 +1,5 @@
 
-enum MyEnum {
-    //% block="one"
-    Room,
-}
+
 
 /**
  * Custom blocks
@@ -17,7 +14,7 @@ namespace Catloops {
      <i class ="far fa-play-circle"></i>
      */
     //% block
-    export function Play_song (e: MyEnum): void {
+    export function Play_song_Room () {
         
     for (let index = 0; index < 2; index++) {
         music.playTone(440, music.beat(BeatFraction.Half))
