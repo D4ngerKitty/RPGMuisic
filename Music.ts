@@ -19,9 +19,6 @@ namespace CatloopsVol1 {
      <i class ="far fa-play-circle"></i>
      */
     //% block
-    export function foo(n: number, s: string, e: MyEnum): void {
-        // Add code here
-    }
 
     /**
      * TODO: describe your function here
