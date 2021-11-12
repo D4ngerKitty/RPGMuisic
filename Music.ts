@@ -19,7 +19,6 @@ namespace Catloops {
     //% block
     export function Play_song (e: MyEnum): void {
         
-        function Room () {
     for (let index = 0; index < 2; index++) {
         music.playTone(440, music.beat(BeatFraction.Half))
         music.rest(music.beat(BeatFraction.Half))
@@ -46,7 +45,6 @@ namespace Catloops {
     music.playTone(659, music.beat(BeatFraction.Half))
     music.playTone(659, music.beat(BeatFraction.Half))
     music.rest(music.beat(BeatFraction.Whole))
-}
     }
 
 }
