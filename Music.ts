@@ -9,13 +9,15 @@ enum songs {
     Seaside_town,
     //% block="Ocean"
     Ocean,
+    //% block="Town"
+    Town,
 }
 
 
 namespace Music {
     /**
      * CatQuestVo1 
-     * 3 loopable songs
+     * 5 loopable songs
      */
     //% block
     export function CatQuestVo1(melody: songs): void {
@@ -104,6 +106,48 @@ namespace Music {
                     music.playMelody("C - C - C - C - ", 200)
                 })
                 music.playMelody("D F D G D F D G ", 200)
+            case songs.Town:
+                timer.background(function () {
+                    music.playTone(247, music.beat(BeatFraction.Double))
+                })
+                music.playTone(494, music.beat(BeatFraction.Whole))
+                music.playTone(523, music.beat(BeatFraction.Half))
+                music.playTone(494, music.beat(BeatFraction.Half))
+                timer.background(function () {
+                    music.playTone(262, music.beat(BeatFraction.Double))
+                })
+                music.playTone(523, music.beat(BeatFraction.Whole))
+                music.playTone(587, music.beat(BeatFraction.Half))
+                music.playTone(523, music.beat(BeatFraction.Half))
+                music.playTone(494, music.beat(BeatFraction.Half))
+                music.playTone(440, music.beat(BeatFraction.Half))
+                music.playTone(392, music.beat(BeatFraction.Half))
+                timer.background(function () {
+                    music.playTone(294, music.beat(BeatFraction.Double))
+                })
+                music.playTone(587, music.beat(BeatFraction.Whole))
+                music.playTone(659, music.beat(BeatFraction.Half))
+                music.playTone(698, music.beat(BeatFraction.Half))
+                music.playTone(494, music.beat(BeatFraction.Half))
+                music.playTone(440, music.beat(BeatFraction.Half))
+                music.playTone(392, music.beat(BeatFraction.Half))
+                music.playTone(440, music.beat(BeatFraction.Half))
+                timer.background(function () {
+                    music.playTone(220, music.beat(BeatFraction.Double))
+                })
+                music.playTone(494, music.beat(BeatFraction.Whole))
+                music.playTone(523, music.beat(BeatFraction.Half))
+                music.playTone(494, music.beat(BeatFraction.Half))
+                timer.background(function () {
+                    music.playTone(262, music.beat(BeatFraction.Double))
+                })
+                music.playTone(494, music.beat(BeatFraction.Whole))
+                music.playTone(523, music.beat(BeatFraction.Half))
+                music.playTone(494, music.beat(BeatFraction.Half))
+                music.playTone(494, music.beat(BeatFraction.Half))
+                music.playTone(440, music.beat(BeatFraction.Half))
+                music.playTone(392, music.beat(BeatFraction.Half))
+                music.playTone(440, music.beat(BeatFraction.Half))
         }
     }
     
