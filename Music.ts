@@ -78,7 +78,6 @@ namespace Music {
                     music.playTone(262, music.beat(BeatFraction.Quarter))
                     music.rest(music.beat(BeatFraction.Half))
                 }
-            default:
         }
     }
     
