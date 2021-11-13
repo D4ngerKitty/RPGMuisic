@@ -20,8 +20,8 @@ namespace Music {
      * 5 loopable songs
      */
     //% block
-    export function CatQuestVo1(melody: songs): void {
-        switch (melody) {
+    export function CatQuestVo1(song: songs): void {
+        switch (song) {
             case songs.Room:
                 for (let index = 0; index < 2; index++) {
                     music.playTone(440, music.beat(BeatFraction.Half))
@@ -49,6 +49,8 @@ namespace Music {
                 music.playTone(659, music.beat(BeatFraction.Half))
                 music.playTone(659, music.beat(BeatFraction.Half))
                 music.rest(music.beat(BeatFraction.Whole))
+            
+            
             case songs.Tevern:
                 for (let index = 0; index < 1; index++) {
                     timer.background(function () {
