@@ -43,14 +43,10 @@ namespace CatQuestVo1 {
     music.playTone(659, music.beat(BeatFraction.Half))
     music.rest(music.beat(BeatFraction.Whole))
     }
-    /**
-    * TODO: describe your function here
-    * @param n describe parameter here, eg: 5
-    * @param s describe parameter here, eg: "Hello"
-    * @param e describe parameter here
-    <i class ="far fa-play-circle"></i>
+    /** 
+     * song two of CatQuestVo1
     */
-    //% block
+     //% block
     export function Play_song_Tavern() {
 
         for (let index = 0; index < 1; index++) {
