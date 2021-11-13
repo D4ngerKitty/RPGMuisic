@@ -7,17 +7,18 @@ enum songs {
     Tevern,
     //% block="Seaside_town"
     Seaside_town,
-    
+    //% block="Ocean"
+    Ocean,
 }
 
 
 namespace Music {
     /**
      * CatQuestVo1 
-     * 2 loopable songs
+     * 3 loopable songs
      */
     //% block
-    export function CatQuestVo1_(melody: songs): void {
+    export function CatQuestVo1(melody: songs): void {
         switch (melody) {
             case songs.Room:
                 for (let index = 0; index < 2; index++) {
@@ -92,7 +93,17 @@ namespace Music {
                     music.playMelody("- D - D - D - D ", 120)
                 })
                 music.playMelody("D F A D F G D E ", 120)
-            
+            case songs.Ocean:
+                music.playMelody("E G E A E G E A ", 200)
+                music.playMelody("D F D G D F D G ", 200)
+                timer.background(function () {
+                    music.playMelody("C - C - C - C - ", 200)
+                })
+                music.playMelody("E G E A E G E A ", 200)
+                timer.background(function () {
+                    music.playMelody("C - C - C - C - ", 200)
+                })
+                music.playMelody("D F D G D F D G ", 200)
         }
     }
     
