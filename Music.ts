@@ -5,16 +5,16 @@ enum songs {
     Room = 0,
     //% block="Tevern" 
     Tevern,
+    //% block="Seaside_town"
+    Seaside_town,
+    
 }
 
 
 namespace Music {
     /**
-     * TODO: describe your function here
-     * @param n describe parameter here, eg: 5
-     * @param s describe parameter here, eg: "Hello"
-     * @param e describe parameter here
-     <i class ="far fa-play-circle"></i>
+     * CatQuestVo1 
+     * 2 loopable songs
      */
     //% block
     export function CatQuestVo1_(melody: songs): void {
@@ -75,6 +75,24 @@ namespace Music {
                     music.playTone(262, music.beat(BeatFraction.Quarter))
                     music.rest(music.beat(BeatFraction.Half))
                 }
+            case songs.Seaside_town:
+                timer.background(function () {
+                    music.playMelody("- C - C - C - C ", 120)
+                })
+                music.playMelody("E G B E G A E F ", 120)
+                timer.background(function () {
+                    music.playMelody("- D - D - D - D ", 120)
+                })
+                music.playMelody("F A C5 F B C5 F A ", 120)
+                timer.background(function () {
+                    music.playMelody("- C - C - C - C ", 120)
+                })
+                music.playMelody("E G B E G A E F ", 120)
+                timer.background(function () {
+                    music.playMelody("- D - D - D - D ", 120)
+                })
+                music.playMelody("D F A D F G D E ", 120)
+            
         }
     }
     
