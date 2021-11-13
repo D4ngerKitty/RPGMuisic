@@ -77,7 +77,7 @@ namespace Music {
                     music.playTone(330, music.beat(BeatFraction.Quarter))
                     music.playTone(262, music.beat(BeatFraction.Quarter))
                     music.rest(music.beat(BeatFraction.Half))
-                }
+                } 
             case songs.Seaside_town:
                 timer.background(function () {
                     music.playMelody("- C - C - C - C ", 120)
@@ -148,6 +148,7 @@ namespace Music {
                 music.playTone(440, music.beat(BeatFraction.Half))
                 music.playTone(392, music.beat(BeatFraction.Half))
                 music.playTone(440, music.beat(BeatFraction.Half))
+             default:
         }
     }
     
