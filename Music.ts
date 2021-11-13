@@ -43,6 +43,8 @@ namespace CatQuestVo1 {
     music.playTone(659, music.beat(BeatFraction.Half))
     music.rest(music.beat(BeatFraction.Whole))
     }
+
+    
     export function Play_song_Tavern() {
 
             for (let index = 0; index < 1; index++) {
