@@ -99,6 +99,8 @@ namespace Music {
                     music.playMelody("- D - D - D - D ", 120)
                 })
                 music.playMelody("D F A D F G D E ", 120)
+            }
+            switch (song) {
             case songs.Ocean:
                 music.playMelody("E G E A E G E A ", 200)
                 music.playMelody("D F D G D F D G ", 200)
@@ -110,7 +112,9 @@ namespace Music {
                     music.playMelody("C - C - C - C - ", 200)
                 })
                 music.playMelody("D F D G D F D G ", 200)
-            case songs.Town:
+            }
+             switch (song) {
+               case songs.Town:
                 timer.background(function () {
                     music.playTone(247, music.beat(BeatFraction.Double))
                 })
@@ -152,9 +156,9 @@ namespace Music {
                 music.playTone(440, music.beat(BeatFraction.Half))
                 music.playTone(392, music.beat(BeatFraction.Half))
                 music.playTone(440, music.beat(BeatFraction.Half))
-             default:
+            }
         }
     }
     
-}
+
 
