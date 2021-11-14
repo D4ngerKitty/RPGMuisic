@@ -81,8 +81,8 @@ namespace Music {
                 music.rest(music.beat(BeatFraction.Half))
             }
             }
-        switch (song) {
-          case songs.Seaside_town:
+              switch (song) {
+               case songs.Seaside_town:
                 timer.background(function () {
                     music.playMelody("- C - C - C - C ", 120)
                 })
