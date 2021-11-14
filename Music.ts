@@ -3,8 +3,8 @@
 enum songs {
     //% block="Room" 
     Room = 0,
-    //% block="Tevern" 
-    Tevern,
+    //% block="Tavern" 
+    Tavern,
     //% block="Seaside_town"
     Seaside_town,
     //% block="Ocean"
@@ -51,7 +51,7 @@ namespace Music {
                 music.rest(music.beat(BeatFraction.Whole))
             }
                 switch (song) {
-                case songs.Tevern:
+                case songs.Tavern:
                for (let index = 0; index < 1; index++) {
                 timer.background(function () {
                     music.playTone(262, music.beat(BeatFraction.Quarter))
