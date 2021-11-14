@@ -49,38 +49,40 @@ namespace Music {
                 music.playTone(659, music.beat(BeatFraction.Half))
                 music.playTone(659, music.beat(BeatFraction.Half))
                 music.rest(music.beat(BeatFraction.Whole))
-            
-            
-            case songs.Tevern:
-                for (let index = 0; index < 1; index++) {
-                    timer.background(function () {
-                        music.playTone(262, music.beat(BeatFraction.Quarter))
-                    })
-                    music.playTone(330, music.beat(BeatFraction.Quarter))
-                    music.rest(music.beat(BeatFraction.Half))
-                    music.playTone(349, music.beat(BeatFraction.Quarter))
-                    music.playTone(330, music.beat(BeatFraction.Quarter))
+            }
+                switch (song) {
+                case songs.Tevern:
+               for (let index = 0; index < 1; index++) {
+                timer.background(function () {
                     music.playTone(262, music.beat(BeatFraction.Quarter))
-                    music.playTone(294, music.beat(BeatFraction.Quarter))
-                    music.playTone(330, music.beat(BeatFraction.Quarter))
+                })
+                music.playTone(330, music.beat(BeatFraction.Quarter))
+                music.rest(music.beat(BeatFraction.Half))
+                music.playTone(349, music.beat(BeatFraction.Quarter))
+                music.playTone(330, music.beat(BeatFraction.Quarter))
+                music.playTone(262, music.beat(BeatFraction.Quarter))
+                music.playTone(294, music.beat(BeatFraction.Quarter))
+                music.playTone(330, music.beat(BeatFraction.Quarter))
+                music.playTone(262, music.beat(BeatFraction.Quarter))
+                music.rest(music.beat(BeatFraction.Half))
+                music.playTone(330, music.beat(BeatFraction.Quarter))
+                music.playTone(262, music.beat(BeatFraction.Quarter))
+                music.playTone(294, music.beat(BeatFraction.Quarter))
+                timer.background(function () {
                     music.playTone(262, music.beat(BeatFraction.Quarter))
-                    music.rest(music.beat(BeatFraction.Half))
-                    music.playTone(330, music.beat(BeatFraction.Quarter))
-                    music.playTone(262, music.beat(BeatFraction.Quarter))
-                    music.playTone(294, music.beat(BeatFraction.Quarter))
-                    timer.background(function () {
-                        music.playTone(262, music.beat(BeatFraction.Quarter))
-                    })
-                    music.playTone(330, music.beat(BeatFraction.Quarter))
-                    music.playTone(349, music.beat(BeatFraction.Quarter))
-                    music.playTone(330, music.beat(BeatFraction.Quarter))
-                    music.playTone(262, music.beat(BeatFraction.Quarter))
-                    music.playTone(294, music.beat(BeatFraction.Quarter))
-                    music.playTone(330, music.beat(BeatFraction.Quarter))
-                    music.playTone(262, music.beat(BeatFraction.Quarter))
-                    music.rest(music.beat(BeatFraction.Half))
-                } 
-            case songs.Seaside_town:
+                })
+                music.playTone(330, music.beat(BeatFraction.Quarter))
+                music.playTone(349, music.beat(BeatFraction.Quarter))
+                music.playTone(330, music.beat(BeatFraction.Quarter))
+                music.playTone(262, music.beat(BeatFraction.Quarter))
+                music.playTone(294, music.beat(BeatFraction.Quarter))
+                music.playTone(330, music.beat(BeatFraction.Quarter))
+                music.playTone(262, music.beat(BeatFraction.Quarter))
+                music.rest(music.beat(BeatFraction.Half))
+            }
+            }
+        switch (song) {
+          case songs.Seaside_town:
                 timer.background(function () {
                     music.playMelody("- C - C - C - C ", 120)
                 })
