@@ -1,5 +1,5 @@
 enum CatQuestVo2en {
-    //% block="Room" 
+    //% block="Jumpy" 
     Jumpy = 0,
 }  
 
