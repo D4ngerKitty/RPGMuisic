@@ -1,4 +1,4 @@
-enum songs {
+enum CatQuestVo2en {
     //% block="Room" 
     Jumpy = 0,
 }  
@@ -10,9 +10,9 @@ namespace Music {
      * 1 loopable songs
      */
     //% block
-    export function CatQuestVo2(melody: songs): void {
-        switch (melody) {
-            case songs.Jumpy:
+    export function CatQuestVo2(MeCatQuestVo2en: CatQuestVo2en): void {
+        switch (MeCatQuestVo2en) {
+            case CatQuestVo2en.Jumpy:
                 timer.background(function () {
                     for (let index = 0; index < 3; index++) {
                         music.playMelody("C - C - C - C - ", 300)
