@@ -8,13 +8,14 @@
     "files": [
         "README.md",
         "assets.json",
-        "Music.ts"
+        "Music.ts",
+        "CatquestVol2.ts"
     ],
     "testFiles": [
         "test.ts"
     ],
     "targetVersions": {
-        "target": "1.6.24",
+        "target": "1.7.16",
         "targetId": "arcade"
     },
     "supportedTargets": [
