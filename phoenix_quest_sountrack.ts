@@ -14,36 +14,19 @@ namespace Music {
     export function phoenix_quest_soundtrack(Soundtrack: Soundtrackenum): void {
         switch (Soundtrack) {
             case Soundtrackenum.Walking:
-                timer.background(function () {
-                    for (let index = 0; index < 3; index++) {
-                        music.playMelody("C - C - C - C - ", 300)
-                        music.playMelody("D - D - D - D - ", 300)
-                    }
-                })
-                music.playMelody("B B - - B B - - ", 300)
-                music.playMelody("B B - - B B - - ", 300)
-                music.playMelody("B A C5 - B A C5 - ", 300)
-                music.playMelody("B B A - A B B C5 ", 300)
-                music.playMelody("B A C5 - C5 A B - ", 300)
-                music.playMelody("B B C5 C5 B B C5 C5 ", 300)
-                music.stopAllSounds()
-                music.playMelody("- - - - - - - - ", 300)
-                music.playMelody("C5 B G F D G A B ", 300)
-                timer.background(function () {
-                    for (let index = 0; index < 3; index++) {
-                        music.playMelody("C - C - C - C - ", 300)
-                        music.playMelody("D - D - D - D - ", 300)
-                    }
-                })
-                music.playMelody("B B - - B B - - ", 300)
-                music.playMelody("B B - - B B - - ", 300)
-                music.playMelody("B A C5 - B A C5 - ", 300)
-                music.playMelody("B A C5 - C5 A B - ", 300)
-                music.playMelody("B B A - A B B C5 ", 300)
-                music.playMelody("B B C5 C5 B B C5 C5 ", 300)
-                music.stopAllSounds()
-                music.playMelody("- - - - - - - - ", 300)
-                music.playMelody("C5 A A E D A A B ", 300)
-        }
-    }
+                for (let index = 0; index < 2; index++) {
+                    timer.background(function () {
+                        music.playMelody("E F G A E F G A ", 120)
+                    })
+                    music.playMelody("C C5 C C5 C C5 C C5 ", 120)
+                    timer.background(function () {
+                        music.playMelody("C C5 C C5 C C5 C C5 ", 120)
+                    })
+                    music.playMelody("A G F E A G F E ", 120)
+                }
+                music.playMelody("E F G A F E F G ", 120)
+            }
+    
+        }   
+    
 }
