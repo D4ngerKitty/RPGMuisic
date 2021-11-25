@@ -1,5 +1,5 @@
 enum Soundtrackenum {
-    //% block="Jumpy" 
+    //% block="Walking"
     Walking = 0,
 }
 
