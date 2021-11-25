@@ -9,7 +9,8 @@
         "README.md",
         "assets.json",
         "Music.ts",
-        "CatquestVol2.ts"
+        "CatquestVol2.ts",
+        "phoenix_quest_sountrack.ts"
     ],
     "testFiles": [
         "test.ts"
